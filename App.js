@@ -1,13 +1,16 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
 import tw from 'tailwind-rn';
+import { LogBox } from 'react-native';
+LogBox.ignoreAllLogs(); //Ignore log notfication by message
+import { AuthProvider } from './hooks/useAuth';
 import StackNavigator from './StackNavigator';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <StackNavigator />
+      <AuthProvider>
+        <StackNavigator />
+      </AuthProvider>
     </NavigationContainer>
   );
 }
