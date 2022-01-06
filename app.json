@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "tindeclone",
-    "slug": "tindeclone",
+    "name": "tinderclone",
+    "slug": "tinderclone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/hamzaumar8/ReactNative-Tinder-Clone"
   }
 }
